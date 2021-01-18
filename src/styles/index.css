@@ -1,0 +1,19 @@
+:root {
+  --primary-color: #4a4a4a;
+  --reversed-primary-color: #f7f7fa;
+  --highlight-bg: #F4BC08;
+  --link-bg: #007bff;
+}
+
+body {
+  margin: 0;
+  color: #4a4a4a;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
