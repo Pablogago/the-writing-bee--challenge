@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 :root {
   --primary-color: #4a4a4a;
   --reversed-primary-color: #f7f7fa;
@@ -10,13 +9,6 @@ body {
   margin: 0;
   color: #4a4a4a;
   font-family: 'Roboto', sans-serif;
-=======
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
->>>>>>> a51b9238d467dcd08ab35be8a57c9ccb14ddadb5
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
