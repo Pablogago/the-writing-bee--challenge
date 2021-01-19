@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import PastWritingBees from './pages/PastWritingBees';
-import { ReactComponent as Menu } from './images/menu.svg';
 import './styles/App.css';
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
               className="menu"
               onClick={_ => setToggleMenu(!toggleMenu)}
               id="nav-icon">
-            <Menu className="menu-button" width="20" height="20" title="menu"/>
+            <img className="menu-button" width="20" height="20" alt="menu" src={`${process.env.PUBLIC_URL}/images/menu.svg`} alt="Menu"/>
           </button>
         </header>
         <Switch>

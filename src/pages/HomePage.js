@@ -1,5 +1,4 @@
 import React from 'react';
-import { ReactComponent as TickIcon } from '../images/tick.svg';
 
 function HomePage() {
   return (
@@ -9,7 +8,7 @@ function HomePage() {
           <a className="hero-heading--link">
             <div className="heading-link-block">
               <span>The 2020</span>
-              <img className="scroll-img" src={`${process.env.PUBLIC_URL}/images/scroll.png`} alt="scroll" />
+              <div className="scroll-img"></div>
             </div>
             <span className="heading--title">Writing Bee</span>
           </a>
@@ -35,28 +34,28 @@ function HomePage() {
         <ul className="section-list">
           <li className="features-list--item">
             <div>
-              <TickIcon className="tick-icon" width="20" height="20" title="tick"/>
+              <img src={`${process.env.PUBLIC_URL}/images/tick.svg`} className="tick-icon" width="20" height="20" title="tick"/>
               <span>Standards-based Writing Practice</span>
             </div>
             <p>While creating their story, students will strengthen their use of effective techniques, descriptive details, and clear event sequences.</p>
           </li>
           <li className="features-list--item">
             <div>
-              <TickIcon className="tick-icon" width="20" height="20" title="tick"/>
+              <img src={`${process.env.PUBLIC_URL}/images/tick.svg`} className="tick-icon" width="20" height="20" title="tick"/>
               <span>Personalized Writing Feedback</span>
             </div>
             <p>Providing students individualized feedback on their own work is the most appropriate and effective approach to teach writing.</p>
           </li>
           <li className="features-list--item">
             <div>
-              <TickIcon className="tick-icon" width="20" height="20" title="tick"/>
+              <img src={`${process.env.PUBLIC_URL}/images/tick.svg`} className="tick-icon" width="20" height="20" title="tick"/>
               <span>Online Testing Preparation</span>
             </div>
             <p>It’s never too soon to prepare students for the online testing environment where they’ll be expected to produce their best writing.</p>
           </li>
           <li className="features-list--item">
             <div>
-              <TickIcon className="tick-icon" width="20" height="20" title="tick"/>
+              <img src={`${process.env.PUBLIC_URL}/images/tick.svg`} className="tick-icon" width="20" height="20" title="tick"/>
               <span>Transferable Writing Skills</span>
             </div>
             <p>Storywriting offers a plethora of transferable writing skills that will boost their ability in both fiction and non-fiction writing assignments.</p>
@@ -138,7 +137,7 @@ function HomePage() {
           <div className="card">
             <div className="card-arrow"><span className="card-arrow--dot"></span></div>
             <div className="card-content">
-              <img src={`${process.env.PUBLIC_URL}/images//finals.png`} alt="Celebration icon"/>
+              <img src={`${process.env.PUBLIC_URL}/images/finals.png`} alt="Celebration icon"/>
               <div>
                 <div className="card-content--title">December - March 2020 - Qualifying Sessions</div>
                 <p>Teachers are welcome to conduct classroom-based qualifying sessions with their students in Grades 4-6.</p>
