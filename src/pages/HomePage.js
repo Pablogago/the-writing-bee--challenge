@@ -1,41 +1,25 @@
 import React from 'react';
-import ScrollImg from '../images/scroll.png';
-import BoomWriterRev from '../images/boomwriter_bwm_rgb_rev.png';
-import HeroGlobe from '../images/hero_globe.png';
-import BoomWriter from '../images/bw_splat.png';
-import Triangle from '../images/triangle.png';
-import TestimonyImg from '../images/d_wilson.jpg';
-import HowItWorksDiagram from '../images/how-it-works-diagram.png';
-import WritingIcon from '../images/writing.png';
-import CelebrationIcon from '../images/finals.png';
-
-import BulletRead from '../images/works_bullet_read.png';
-import BulletRepeat from '../images/works_bullet_repeat.png';
-import BulletShare from '../images/works_bullet_share.png';
-import BulletVote from '../images/works_bullet_vote.png';
-import BulletWrite from '../images/works_bullet_write.png';
-
 import { ReactComponent as TickIcon } from '../images/tick.svg';
 
 function HomePage() {
   return (
-    <div className="home-section">
+    <div className="home">
       <section className="hero-section">
         <div className="hero-heading">
           <a className="hero-heading--link">
             <div className="heading-link-block">
               <span>The 2020</span>
-              <img className="scroll-img" src={ScrollImg} alt="scroll" />
+              <img className="scroll-img" src={`${process.env.PUBLIC_URL}/images/scroll.png`} alt="scroll" />
             </div>
             <span className="heading--title">Writing Bee</span>
           </a>
           <div className="heading--descriptions">
             <p>Because all kids love writing stories!</p>
-            <p>Powered by: <br /><img className="boomWriterRev-img" src={BoomWriterRev} /></p>
+            <p>Powered by: <br /><img className="boomWriterRev-img" src={`${process.env.PUBLIC_URL}/images/boomwriter_bwm_rgb_rev.png`} /></p>
           </div>
           <div className="heading--img-wrapper">
-            <img className="globe-img" src={HeroGlobe} />
-            <img className="triangle-img" src={Triangle} />
+            <img className="globe-img" src={`${process.env.PUBLIC_URL}/images/hero_globe.png`} />
+            <img className="triangle-img" src={`${process.env.PUBLIC_URL}/images/triangle.png`} />
           </div>
           <div className="home-section--intro">
             <div className="intro--wrapper">
@@ -48,31 +32,39 @@ function HomePage() {
       </section>
       <section className="features-section">
         <div className="features-title">The Writing Bee will improve Your Students’ Learning by Providing:</div>
-        <ul className="features-list">
+        <ul className="section-list">
           <li className="features-list--item">
-            <TickIcon className="tick-icon" width="20" height="20" title="tick"/>
-            <span>Standards-based Writing Practice</span>
+            <div>
+              <TickIcon className="tick-icon" width="20" height="20" title="tick"/>
+              <span>Standards-based Writing Practice</span>
+            </div>
             <p>While creating their story, students will strengthen their use of effective techniques, descriptive details, and clear event sequences.</p>
           </li>
           <li className="features-list--item">
-            <TickIcon className="tick-icon" width="20" height="20" title="tick"/>
-            <span>Standards-based Writing Practice</span>
-            <p>While creating their story, students will strengthen their use of effective techniques, descriptive details, and clear event sequences.</p>
+            <div>
+              <TickIcon className="tick-icon" width="20" height="20" title="tick"/>
+              <span>Personalized Writing Feedback</span>
+            </div>
+            <p>Providing students individualized feedback on their own work is the most appropriate and effective approach to teach writing.</p>
           </li>
           <li className="features-list--item">
-            <TickIcon className="tick-icon" width="20" height="20" title="tick"/>
-            <span>Standards-based Writing Practice</span>
-            <p>While creating their story, students will strengthen their use of effective techniques, descriptive details, and clear event sequences.</p>
+            <div>
+              <TickIcon className="tick-icon" width="20" height="20" title="tick"/>
+              <span>Online Testing Preparation</span>
+            </div>
+            <p>It’s never too soon to prepare students for the online testing environment where they’ll be expected to produce their best writing.</p>
           </li>
           <li className="features-list--item">
-            <TickIcon className="tick-icon" width="20" height="20" title="tick"/>
-            <span>Standards-based Writing Practice</span>
-            <p>While creating their story, students will strengthen their use of effective techniques, descriptive details, and clear event sequences.</p>
+            <div>
+              <TickIcon className="tick-icon" width="20" height="20" title="tick"/>
+              <span>Transferable Writing Skills</span>
+            </div>
+            <p>Storywriting offers a plethora of transferable writing skills that will boost their ability in both fiction and non-fiction writing assignments.</p>
           </li>
         </ul>
         <a className="btn btn-primary" href="https://account.boomwriter.com/signup">Start your class writing bee</a>
         <div className="features--testimony-holder">
-          <img src={TestimonyImg} alt="testimony"/>
+          <img src={`${process.env.PUBLIC_URL}/images/d_wilson.jpg`} alt="testimony"/>
           <blockquote>The Writing Bee was the most valuable writing experience I have had with my class in many years. My students were fully engaged - they collaborated, edited, imagined, improved, and happily worked for many hours on their chapter writing. My students improved their writing skills and also learned that they love writing.  Invaluable lessons.  Thank you, BoomWriter!</blockquote>
           <p className="testimony-name">D.Wilson</p>
           <p>Camino Elementary School, Camino, California USA</p>
@@ -82,7 +74,7 @@ function HomePage() {
       <section className="competition-section">
         <div className="section-title">The Writing Bee Competition</div>
         <p>The Writing Bee kicks off in schools with students participating in district or school-based Qualifying sessions. Students who qualify move on to the Finals with a chance to be crowned The Writing Bee Champion.</p>
-        <img src={HowItWorksDiagram} alt="diagram"/>
+        <img src={`${process.env.PUBLIC_URL}/images/how-it-works-diagram.png`} alt="diagram"/>
         <ul className="section-list">
           <li>
             <span>1. Kick Off</span>
@@ -103,28 +95,28 @@ function HomePage() {
         </ul>
       </section>
       <section className="boomwriter-section">
-        <div className="section-title">The Writing Bee is powered by <img alt="BoomWriter" src={BoomWriter}/></div>
+        <div className="section-title">The Writing Bee is powered by <img alt="BoomWriter" src={`${process.env.PUBLIC_URL}/images/bw_splat.png`}/></div>
         <p>The Writing Bee employs BoomWriter’s unique content generation platform that allows students to compete and collaborate online as they:</p>
         <div className="boomwriter-imgs-wrapper">
           <ul className="section-list">
             <li>
-              <img width="60" height="60" src={BulletRead} alt="BulletRead"/>
+              <img width="60" height="60" src={`${process.env.PUBLIC_URL}/images/works_bullet_read.png`} alt="BulletRead"/>
               <span>Read/View<br/></span>The prompt
             </li>
             <li>
-              <img width="60" height="60" src={BulletWrite} alt="BulletWrite"/>
+              <img width="60" height="60" src={`${process.env.PUBLIC_URL}/images/works_bullet_write.png`} alt="BulletWrite"/>
               <span>Write<br/></span>An entry
             </li>
             <li>
-              <img width="60" height="60" src={BulletShare} alt="BulletShare"/>
+              <img width="60" height="60" src={`${process.env.PUBLIC_URL}/images/works_bullet_share.png`} alt="BulletShare"/>
               <span>Share<br/></span>With peers
             </li>
             <li>
-              <img width="60" height="60" src={BulletVote} alt="BulletVote"/>
+              <img width="60" height="60" src={`${process.env.PUBLIC_URL}/images/works_bullet_vote.png`} alt="BulletVote"/>
               <span>Vote<br/> </span>For the favorite
             </li>
             <li>
-              <img width="60" height="60" src={BulletRepeat} alt="BulletRepeat"/>
+              <img width="60" height="60" src={`${process.env.PUBLIC_URL}/images/works_bullet_repeat.png`} alt="BulletRepeat"/>
               <span>Repeat<br/></span>Until complete
             </li>
           </ul>
@@ -136,7 +128,7 @@ function HomePage() {
           <div className="card">
             <div className="card-arrow"><span className="card-arrow--dot"></span></div>
             <div className="card-content">
-              <img src={WritingIcon} alt="Writing icon"/>
+              <img src={`${process.env.PUBLIC_URL}/images/writing.png`} alt="Writing icon"/>
               <div>
                 <div className="card-content--title">December - March 2020 - Qualifying Sessions</div>
                 <p>Teachers are welcome to conduct classroom-based qualifying sessions with their students in Grades 4-6.</p>
@@ -146,7 +138,7 @@ function HomePage() {
           <div className="card">
             <div className="card-arrow"><span className="card-arrow--dot"></span></div>
             <div className="card-content">
-              <img src={CelebrationIcon} alt="Celebration icon"/>
+              <img src={`${process.env.PUBLIC_URL}/images//finals.png`} alt="Celebration icon"/>
               <div>
                 <div className="card-content--title">December - March 2020 - Qualifying Sessions</div>
                 <p>Teachers are welcome to conduct classroom-based qualifying sessions with their students in Grades 4-6.</p>
